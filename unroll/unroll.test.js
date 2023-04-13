@@ -34,12 +34,12 @@ describe("#unroll", function () {
     expect(typeof unroll).toEqual("function");
   });
   it("should unroll letter square correctly", ()=>{
-    expect(unroll(smallerSquare)).toEqual(["a", "b", "c", "f", "i", "h", "g", "d", "e"])
+    expect(unroll(letterSquare)).toEqual(["a", "b", "c", "f", "i", "h", "g", "d", "e"])
   })
   it("should unroll number square correctly", ()=>{
-    expect(unroll(square)).toEqual([1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10])
+    expect(unroll(numberSquare)).toEqual([1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10])
   })
   it('should unroll 100x100 square correctly', ()=>{
-    expect(unroll(evenLargerSquare)).toEqual([
+    expect(unroll(hugeSquare)).toEqual([
       1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,99,98,97,96,95,94,93,92,91,81,71,61,51,41,31,21,11,12,13,14,15,16,17,18,19,29,39,49,59,69,79,89,88,87,86,85,84,83,82,72,62,52,42,32,22,23,24,25,26,27,28,38,48,58,68,78,77,76,75,74,73,63,53,43,33,34,35,36,37,47,57,67,66,65,64,54,44,45,46,56,55])})
 });
